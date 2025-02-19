@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomi - Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo-bloomi.png" alt="Logo Bloomi"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="proyectos">
+        <h2>Nuestros Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <img src="electro-navegante.png" alt="ElectroNavegante">
+                <h3>ElectroNavegante</h3>
+                <p>Aprende electrónica de manera divertida y práctica.</p>
+                <p class="precio">$9.99</p>
+                <button class="btn-info" onclick="mostrarInfo('electro')">Más Información</button>
+                <div id="info-electro" class="info-detallada" style="display: none;">
+                    <h4>Descripción Detallada</h4>
+                    <p>ElectroNavegante es una aplicación interactiva que enseña los conceptos básicos de electrónica a través de simulaciones y proyectos prácticos.</p>
+                    <ul>
+                        <li>Simuladores de circuitos.</li>
+                        <li>Guías paso a paso.</li>
+                        <li>Proyectos para hacer en casa.</li>
+                    </ul>
+                    <button class="btn-cerrar" onclick="cerrarInfo('electro')">Cerrar</button>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="code-flowers.png" alt="CodeFlowers">
+                <h3>CodeFlowers</h3>
+                <p>Introducción a la programación para niños.</p>
+                <p class="precio">$7.99</p>
+                <button class="btn-info" onclick="mostrarInfo('code')">Más Información</button>
+                <div id="info-code" class="info-detallada" style="display: none;">
+                    <h4>Descripción Detallada</h4>
+                    <p>CodeFlowers es una aplicación diseñada para enseñar programación a niños de manera divertida y visual.</p>
+                    <ul>
+                        <li>Lenguajes de programación simples.</li>
+                        <li>Juegos y desafíos interactivos.</li>
+                        <li>Proyectos creativos.</li>
+                    </ul>
+                    <button class="btn-cerrar" onclick="cerrarInfo('code')">Cerrar</button>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="math-bloom.png" alt="MathBloom">
+                <h3>MathBloom</h3>
+                <p>Matemáticas interactivas para todas las edades.</p>
+                <p class="precio">$5.99</p>
+                <button class="btn-info" onclick="mostrarInfo('math')">Más Información</button>
+                <div id="info-math" class="info-detallada" style="display: none;">
+                    <h4>Descripción Detallada</h4>
+                    <p>MathBloom es una aplicación que hace que las matemáticas sean divertidas y accesibles para todos.</p>
+                    <ul>
+                        <li>Lecciones interactivas.</li>
+                        <li>Problemas y desafíos.</li>
+                        <li>Seguimiento del progreso.</li>
+                    </ul>
+                    <button class="btn-cerrar" onclick="cerrarInfo('math')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Preguntas Frecuentes</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

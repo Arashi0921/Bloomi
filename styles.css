@@ -1,0 +1,376 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #2C3E50;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498DB;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #E67E22;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #3498DB, #2ECC71);
+    color: white;
+    border-bottom: 5px solid #E67E22;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content .slogan {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #E67E22;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #D35400;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #9B59B6;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #8E44AD;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección de Información de la Empresa */
+.informacion-empresa {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.informacion-empresa h2 {
+    margin-bottom: 20px;
+}
+
+.informacion-empresa ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sección de Empresa en Recuadros */
+.empresa-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.empresa-card {
+    background-color: #e0f7fa; /* Color de fondo */
+    border: 2px solid #00bcd4; /* Borde colorido */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s; /* Efecto de transformación */
+}
+
+.empresa-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+    background-color: #b2ebf2; /* Color de fondo al pasar el ratón */
+}
+
+.empresa-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección de Proyectos */
+.proyectos {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.proyectos-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto-card {
+    border: 2px solid #3498DB; /* Borde colorido */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s, background-color 0.3s; /* Efecto de transformación */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+    background-color: #e1f5fe; /* Color de fondo al pasar el ratón */
+}
+
+.proyecto-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de Descargas */
+.descargas {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.descargas-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.descarga-card {
+    border: 2px solid #8e44ad; /* Borde colorido */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s, background-color 0.3s; /* Efecto de transformación */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.descarga-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+    background-color: #f3e5f5; /* Color de fondo al pasar el ratón */
+}
+
+.descarga-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de Registro */
+.registro {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registro button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registro button:hover {
+    background-color: #2980B9;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #3498DB;
+    color: white;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #2C3E50;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498DB;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #E67E22;
+}
+
+/* Sección de Registro */
+.registro {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-section {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+    margin-bottom: 20px;
+}
+
+.form-section input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #2980B9;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #3498DB;
+    color: white;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
