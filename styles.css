@@ -28,21 +28,55 @@ header .logo img {
     height: 50px;
 }
 
-header nav ul {
+/* Menú de navegación */
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     color: #E67E22;
+}
+
+/* Menú móvil */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #3498DB;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
 }
 
 /* Hero Section */
@@ -265,149 +299,4 @@ footer {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-}
-/* Estilos generales */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #3498DB;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para el logo */
-.logo {
-    display: flex; /* Usar flexbox para centrar el logo */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    padding: 10px; /* Espaciado alrededor del logo */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-}
-
-.logo img {
-    width: 150px; /* Ajusta el ancho según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-    transition: transform 0.3s ease; /* Transición suave para efectos */
-}
-
-/* Efecto de hover en el logo */
-.logo img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
-}
-
-/* Botones */
-.btn-primary, .btn-secondary {
-    padding: 10px 20px;
-    color: white;
-    font-weight: 600;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #E67E22;
-}
-
-.btn-secondary {
-    background-color: #9B59B6;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #3498DB;
-    color: white;
-    text-align: center;
-}
-/* Estilos generales */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #3498DB;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header .logo img {
-    height: 50px;
-}
-
-/* Menú de navegación */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #E67E22;
-}
-
-/* Menú móvil */
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #3498DB;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
 }
