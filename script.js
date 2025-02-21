@@ -1,3 +1,9 @@
+// Función para mostrar/ocultar el menú en dispositivos móviles
+document.getElementById('menu-icon').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+});
+
 // Función para mostrar la información detallada
 function mostrarInfo(id) {
     const info = document.getElementById(`info-${id}`);
